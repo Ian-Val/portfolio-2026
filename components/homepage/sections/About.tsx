@@ -2,7 +2,7 @@ export default function About() {
   return (
     <section
       id="about"
-      className="px-20 pb-15 font-semibold items-center text-neutral-900 justify-between"
+      className="pb-15  px-10 font-semibold items-center text-neutral-900 max-w-280 mx-auto justify-between"
     >
       <h2 className="mb-6 text-2xl">About Me</h2>
       <div className="flex flex-col gap-6">
