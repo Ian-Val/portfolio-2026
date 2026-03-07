@@ -17,9 +17,9 @@ export default function CallToAction() {
           <div className="bg-white rounded-lg p-8 border-2 border-blue-600 w-full">
             <h3 className="text-center mb-2">
               Request a{" "}
-              <span className="bg-amber-400 text-neutral-900 px-2 py-1 rounded">
+              <span className="inline-block bg-amber-400 text-neutral-900 px-2 py-1 rounded">
                 Free
-              </span>
+              </span>{" "}
               Consultation
             </h3>
             <small className="block text-center mb-2">

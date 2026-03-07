@@ -22,7 +22,7 @@ export default function Work() {
         </p>
         <p className="my-4 text-center">↓</p>
         <div className="grid sm:grid-cols-3 grid-cols-1 gap-4">
-          <Card>
+          <Card outline={false} color="yellow">
             <p className="text-neutral-900 text-center max-w-50">
               Automotive Detailing Scheduling Website
             </p>
@@ -30,7 +30,7 @@ export default function Work() {
               Learn More
             </button>
           </Card>
-          <Card>
+          <Card outline={true} color="yellow">
             <p className="text-neutral-900 text-center max-w-50">
               Recycling Facility Petition Website
             </p>
@@ -38,7 +38,7 @@ export default function Work() {
               Learn More
             </button>
           </Card>
-          <Card>
+          <Card outline={false} color="yellow">
             <p className="text-neutral-900 text-center max-w-50">
               Encryption Algorithm Electron App
             </p>

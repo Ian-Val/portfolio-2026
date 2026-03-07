@@ -12,9 +12,9 @@ export default function Services() {
       items-center justify-between
       text-neutral-900"
     >
-      <h2 className="mb-6 text-2xl text-center">Pricing Plans</h2>
+      <h2 className="mb-6 text-2xl text-center">Pricinge</h2>
       <div className="grid sm:grid-cols-3 grid-cols-1 gap-4">
-        <Card>
+        <Card outline={true} color="blue">
           <div className="flex sm:flex-col flex-row-reverse justify-between w-full">
             <p className="text-sm text-center">$2,500</p>
             <p className="text-sm text-center">Starter</p>
@@ -27,7 +27,7 @@ export default function Services() {
             <li>6 Month Support</li>
           </ul>
         </Card>
-        <Card>
+        <Card outline={false} color="yellow">
           <div className="flex sm:flex-col flex-row-reverse justify-between w-full">
             <p className="text-sm text-center">$15,500</p>
             <p className="text-sm text-center ">Professional</p>
@@ -40,7 +40,7 @@ export default function Services() {
             <li>1 Year Support</li>
           </ul>
         </Card>
-        <Card>
+        <Card outline={true} color="yellow">
           {/* Full-Stack Web Development
 Custom Web Application
 Cloud Service IntegrationCybersecurity Compliance

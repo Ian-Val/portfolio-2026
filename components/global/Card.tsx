@@ -1,13 +1,16 @@
 import { ReactNode } from "react";
 
 interface CardProps {
+  outline?: boolean;
+  color?: "blue" | "yellow";
   children?: ReactNode;
 }
 
-export default function Card({ children }: CardProps) {
+export default function Card({ children, outline, color }: CardProps) {
+  const circleClass = ` w-2/3 border-2 ${outline ? (color === "yellow" ? "border-amber-400" : "border-blue-600") : color === "yellow" ? "bg-amber-400 border-none" : "bg-blue-600 border-none"} aspect-square rounded-full`;
   return (
     <div className="flex flex-col items-center w-full h-full gap-4 px-4 py-4 border-2 rounded-2xl border-blue-600 bg-white">
-      <div className="w-2/3 bg-amber-400 aspect-square rounded-full"></div>
+      <div className={circleClass}></div>
       {children}
     </div>
   );
