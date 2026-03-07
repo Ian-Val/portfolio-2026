@@ -26,7 +26,7 @@ export default function Work() {
             <p className="text-neutral-900 text-center max-w-50">
               Automotive Detailing Scheduling Website
             </p>
-            <button className="bg-blue-600 block w-full py-2 rounded-lg">
+            <button className="mt-auto bg-blue-600 block w-full py-2 rounded-lg">
               Learn More
             </button>
           </Card>
@@ -34,7 +34,7 @@ export default function Work() {
             <p className="text-neutral-900 text-center max-w-50">
               Recycling Facility Petition Website
             </p>
-            <button className="bg-blue-600 block w-full py-2 rounded-lg">
+            <button className="mt-auto bg-blue-600 block w-full py-2 rounded-lg">
               Learn More
             </button>
           </Card>
@@ -42,7 +42,7 @@ export default function Work() {
             <p className="text-neutral-900 text-center max-w-50">
               Encryption Algorithm Electron App
             </p>
-            <button className="bg-blue-600 block w-full py-2 rounded-lg">
+            <button className="mt-auto bg-blue-600 block w-full py-2 rounded-lg">
               Learn More
             </button>
           </Card>
