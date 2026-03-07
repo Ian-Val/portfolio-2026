@@ -4,12 +4,14 @@ export default function Nav() {
   return (
     <header
       className="
+      fixed
+      w-full
     py-4
     text-neutral-900 bg-neutral-50
     font-semibold shadow-md
     "
     >
-      <nav className="flex justify-between items-center max-w-280 mx-auto  px-10">
+      <nav className=" flex justify-between items-center max-w-280 mx-auto  px-10">
         <Link href="/">ian-val.com</Link>
         <ul className="md:flex justify-center gap-4 hidden">
           <li>

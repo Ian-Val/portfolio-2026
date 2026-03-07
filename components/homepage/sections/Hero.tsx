@@ -23,12 +23,14 @@ export default function Hero() {
         <Link
           href="#cta"
           className="
-          inline-block
+          block
           bg-amber-400 text-neutral-900 
           py-3
           px-6
           md:w-auto
-          w-full
+          md:mx-0
+          md:inline-block
+          mx-10
           text-center
           rounded-lg
           "

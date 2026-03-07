@@ -5,7 +5,7 @@ export default function About() {
       className="pb-15  px-10 font-semibold items-center text-neutral-900 max-w-280 mx-auto justify-between"
     >
       <h2 className="mb-6 text-2xl">About Me</h2>
-      <div className="flex flex-col gap-6">
+      <div className="flex flex-col gap-6 ">
         <p>
           I'm a full-stack web developer, with 4 years of experience developing
           web applications and responsive websites. I focus on creating digital

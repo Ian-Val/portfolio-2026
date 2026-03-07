@@ -5,7 +5,7 @@ export default function CallToAction() {
   return (
     <>
       <section
-        id="hero"
+        id="cta"
         className="
         max-w-280 mx-auto
         sm:px-10
@@ -14,7 +14,7 @@ export default function CallToAction() {
       "
       >
         <div className="sm:w-auto sm:p-0 w-full p-10">
-          <div className="bg-white rounded-lg p-8 border-2 border-blue-600 w-full">
+          <div className="bg-white rounded-lg p-10 border-2 border-blue-600 w-full">
             <h2 className="text-center text-2xl mb-2">
               Request a{" "}
               <span className="inline-block bg-amber-400 text-neutral-900 px-2 py-1 rounded">
@@ -65,7 +65,7 @@ export default function CallToAction() {
             </form>
           </div>
         </div>
-        <div className="bg-amber-400 sm:p-8 p-10 w-full flex flex-col justify-center sm:rounded-lg my-auto">
+        <div className="bg-amber-400 p-10 w-full flex flex-col justify-center sm:rounded-lg my-auto">
           <h2 className="mb-4 text-xl sm:text-start text-center">
             <span className="sm:inline hidden">←</span> Let's Build Something
             Awesome

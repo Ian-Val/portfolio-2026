@@ -19,7 +19,7 @@ export default function Services() {
             <p className="text-sm text-center">$2,500</p>
             <p className="text-sm text-center">Starter</p>
           </div>
-          <ul className="text-sm font-normal flex flex-col gap-2 sm:w-auto w-full">
+          <ul className="text-sm font-normal flex flex-col gap-2  w-full">
             <li>5 Custom Pages</li>
             <li>Mobile-Responsive Design</li>
             <li>Basic SEO</li>
@@ -32,7 +32,7 @@ export default function Services() {
             <p className="text-sm text-center">$15,500</p>
             <p className="text-sm text-center ">Professional</p>
           </div>
-          <ul className="text-sm font-normal flex flex-col gap-2 sm:w-auto w-full">
+          <ul className="text-sm font-normal flex flex-col gap-2 w-full">
             <li>15 Custom Pages</li>
             <li>Mobile-Responsive Design</li>
             <li>Advanced SEO & Performance</li>
@@ -49,7 +49,7 @@ Cloud Service IntegrationCybersecurity Compliance
             <p className="text-sm text-center">$45,500+</p>
             <p className="text-sm text-center">Enterprise</p>
           </div>
-          <ul className="text-sm font-normal flex flex-col gap-2 sm:w-auto w-full">
+          <ul className="text-sm font-normal flex flex-col gap-2 w-full">
             <li>Full-Stack Web Development</li>
             <li>Custom Web Application</li>
             <li>Cloud Service Integration</li>
