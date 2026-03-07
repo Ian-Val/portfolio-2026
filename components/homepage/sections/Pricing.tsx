@@ -12,7 +12,7 @@ export default function Services() {
       items-center justify-between
       text-neutral-900"
     >
-      <h2 className="mb-6 text-2xl text-center">Pricinge</h2>
+      <h2 className="mb-6 text-2xl text-center">Pricing</h2>
       <div className="grid sm:grid-cols-3 grid-cols-1 gap-4">
         <Card outline={true} color="blue">
           <div className="flex sm:flex-col flex-row-reverse justify-between w-full">
