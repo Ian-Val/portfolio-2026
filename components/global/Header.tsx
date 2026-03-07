@@ -4,6 +4,7 @@ export default function Nav() {
   return (
     <header
       className="
+      top-0
       fixed
       w-full
     py-4
@@ -31,9 +32,12 @@ export default function Nav() {
           href="cta"
           className="
           bg-blue-600 text-white 
-          py-3
-          px-6
+          sm:py-3
+          sm:px-6
+          py-2
+          px-4
           rounded-lg
+          text-center
           "
         >
           Consultation Request
