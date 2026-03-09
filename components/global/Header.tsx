@@ -29,7 +29,7 @@ export default function Nav() {
           </li>
         </ul>
         <Link
-          href="cta"
+          href="#cta"
           className="
           bg-blue-600 text-white 
           sm:py-3
