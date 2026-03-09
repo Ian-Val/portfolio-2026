@@ -3,3 +3,11 @@ body {
   background: white;
   font-family: var(--font-lexend), sans-serif;
 }
+
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  scroll-margin-top: 80px;
+}
