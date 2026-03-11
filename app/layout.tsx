@@ -9,9 +9,9 @@ const lexend = Lexend({
 });
 
 export const metadata: Metadata = {
-  title: "Ian Valeta | Full Stack Web Developer Premium Freelancer",
+  title: "Ian Valeta | Full Stack Web Developer",
   description:
-    "Ian Valeta is a full-stack web developer specializing in scalable, high-performance web apps, responsive websites, and SEO-optimized digital solutions. With 4+ years of experience, he crafts tailored web experiences to meet your business goals. Explore his services, pricing, and portfolio today!",
+    "Ian Valeta is recent college graduate looking to land his first full-time role in software development.",
 };
 
 export default function RootLayout({
