@@ -8,35 +8,28 @@ export default function Hero() {
       className="grid md:grid-cols-2 grid-cols-1 gap-8 px-10 py-15 font-semibold items-center text-neutral-900 justify-between max-w-280 mx-auto"
     >
       <div>
-        <ul className="flex text-blue-600 md:justify-start justify-center">
-          <li className="px-2 pl-0 border-r-2 border-amber-400">Web Apps</li>
-          <li className="px-2">Websites</li>
-          <li className="px-2 pr-0 border-l-2 border-amber-400">Web Addons</li>
-        </ul>
-        <h1 className="font-bold text-4xl my-4 md:text-start text-center">
+        <h1 className="font-bold text-4xl mb-4 md:text-start text-center">
+          <span className="flex text-blue-600 text-lg mb-2 md:justify-start justify-center">
+            Full Stack Web Developer
+          </span>{" "}
           Ian Valeta
         </h1>
-        <p className="my-6 max-w-90 md:text-start text-center md:ml-0 mx-auto">
-          I craft scalable and delightful web experiences tailored to your
-          business goals.
+        <p className="my-6 max-w-90 md:text-start text-center md:ml-0 mx-auto font-normal">
+          I am a recent college graduate looking to land my first full-time role
+          in software development.
         </p>
-        <Link
-          href="#cta"
-          className="
-          block
-          bg-amber-400 text-neutral-900 
-          py-3
-          px-6
-          md:w-auto
-          md:mx-0
-          md:inline-block
-          mx-10
-          text-center
-          rounded-lg
-          "
-        >
-          Let's Build Something Awesome
-        </Link>
+        <ul className="mt-8 mb-8 flex gap-2 md:max-w-90 md:justify-start justify-center flex-wrap ">
+          <li className="chip">HTML</li>
+          <li className="chip">CSS</li>
+          <li className="chip">TypeScript</li>
+          <li className="chip">PostgreSQL</li>
+          <li className="chip">MongoDB</li>
+          <li className="chip">Express.js</li>
+          <li className="chip">React.js</li>
+          <li className="chip">Node.js</li>
+          <li className="chip">Next.js</li>
+          <li className="chip">Electron.js</li>
+        </ul>
       </div>
       <div>
         <Image

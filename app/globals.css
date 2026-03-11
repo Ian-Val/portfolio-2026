@@ -12,3 +12,38 @@ html {
 * {
   scroll-margin-top: 120px;
 }
+
+.chip {
+  @apply bg-blue-100 text-blue-600 rounded-full py-1 px-6 flex-wrap;
+}
+
+.link {
+  @apply text-neutral-900;
+}
+
+.link:hover {
+  @apply text-blue-600;
+}
+
+.link:active {
+  @apply text-amber-400;
+}
+
+.button-primary {
+  @apply bg-blue-600 text-white
+  sm:py-3
+  sm:px-6
+  py-2
+  px-4
+  rounded-lg
+  text-center
+  outline-blue-600 outline-2;
+}
+
+.button-primary:hover {
+  @apply bg-white  text-blue-600;
+}
+
+.button-primary:active {
+  @apply bg-blue-300 outline-blue-600 outline-2 text-blue-600;
+}

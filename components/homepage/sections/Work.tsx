@@ -1,4 +1,5 @@
-import Card from "@/components/global/Card";
+"use-client";
+import Link from "next/link";
 
 export default function Work() {
   return (
@@ -17,35 +18,35 @@ export default function Work() {
           My{" "}
           <span className="bg-white text-blue-600 px-2 py-1 rounded">Work</span>
         </h2>
-        <p className="text-center max-w-90 mx-auto">
-          Check out some of my completed and ongoing web development projects.
-        </p>
         <p className="my-4 text-center">↓</p>
-        <div className="grid sm:grid-cols-3 grid-cols-1 gap-4">
-          <Card outline={false} color="yellow">
-            <p className="text-neutral-900 text-center max-w-50">
-              Automotive Detailing Scheduling Website
+        <div className="flex">
+          <div className="flex flex-col items-center w-full h-screen gap-4 px-10 py-10 border-2 rounded-2xl border-blue-600 bg-white text-neutral-900 ">
+            <h2 className="text-3xl">AB EcoPark</h2>
+            <p className="text-start w-full">
+              I build a website for AB EcoPark: A waste recycling facility in
+              the process of obtaining state approval. I developed the website
+              using React.js, Next.js and deployed using Vercel. I also used
+              Supabase to host a PostgreSQL database to store the petition
+              signature information. I used Blender to creat the 3D renderings
+              throughout the webpage with the exception of the main banner
+              image. I used font awesome to get the icons throughout the
+              website. And I also used Tailwind CSS to style the entire webpage.
             </p>
-            <button className="mt-auto bg-blue-600 block w-full py-2 rounded-lg">
-              Learn More
-            </button>
-          </Card>
-          <Card outline={true} color="yellow">
-            <p className="text-neutral-900 text-center max-w-50">
-              Recycling Facility Petition Website
-            </p>
-            <button className="mt-auto bg-blue-600 block w-full py-2 rounded-lg">
-              Learn More
-            </button>
-          </Card>
-          <Card outline={false} color="yellow">
-            <p className="text-neutral-900 text-center max-w-50">
-              Encryption Algorithm Electron App
-            </p>
-            <button className="mt-auto bg-blue-600 block w-full py-2 rounded-lg">
-              Learn More
-            </button>
-          </Card>
+
+            <iframe
+              src="https://www.abecopark.com"
+              width="100%"
+              height="100%"
+              title="Abecopark"
+              className="mt-4 outline-2 outline-neutral-300 rounded-xl"
+            />
+            <Link
+              href="https://www.abecopark.com"
+              className="mt-6 button-primary text-neutral-900"
+            >
+              https://www.abecopark.com
+            </Link>
+          </div>
         </div>
       </div>
     </section>
