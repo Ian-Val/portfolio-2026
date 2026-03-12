@@ -22,16 +22,44 @@ export default function Work() {
         <div className="flex">
           <div className="flex flex-col items-center w-full min-h-screen gap-4 px-10 py-10 border-2 rounded-2xl border-blue-600 bg-white text-neutral-900 ">
             <h2 className="text-3xl">AB EcoPark</h2>
-            <p className="text-start w-full">
-              I build a website for AB EcoPark: A waste recycling facility in
-              the process of obtaining state approval. I developed the website
-              using React.js, Next.js and deployed using Vercel. I also used
-              Supabase to host a PostgreSQL database to store the petition
-              signature information. I used Blender to creat the 3D renderings
-              throughout the webpage with the exception of the main banner
-              image. I used font awesome to get the icons throughout the
-              website. And I also used Tailwind CSS to style the entire webpage.
-            </p>
+            <div className="text-start w-full flex flex-col gap-5">
+              <p>
+                AB EcoPark is a carbon-negative waste recycling facility in the
+                process of obtaining state approval. Blender was used to 3D
+                model and render images of the facility. Instagram & Buffer were
+                used to create social media content to drive traffic to the
+                website.
+              </p>
+              <ul className="list-disc list-inside flex flex-col gap-5">
+                <li>
+                  Frontend built with TypeScript, React.js, Tailwind CSS,
+                  Next.js.
+                </li>
+                <li>
+                  Backend built with Supabase to host a PostgreSQL database to
+                  store petition data.
+                </li>
+                <li>
+                  Deployed GitHub repository with Vercel & configured domains
+                  with GoDaddy
+                </li>
+              </ul>
+            </div>
+
+            <ul className="mt-4 mb-2 flex gap-2 md:justify-start justify-center flex-wrap ">
+              <li className="chip">Blender</li>
+              <li className="chip">Instagram</li>
+              <li className="chip">Buffer</li>
+              <li className="chip">TypeScript</li>
+              <li className="chip">React.js</li>
+              <li className="chip">Tailwind CSS</li>
+              <li className="chip">Next.js</li>
+              <li className="chip">Supabase</li>
+              <li className="chip">PostgreSQL</li>
+              <li className="chip">GitHub</li>
+              <li className="chip">Vercel</li>
+              <li className="chip">GoDaddy</li>
+            </ul>
 
             <iframe
               src="https://www.abecopark.com"
