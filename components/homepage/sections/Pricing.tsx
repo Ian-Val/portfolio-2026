@@ -1,17 +1,9 @@
 import Card from "@/components/global/Card";
+import Section from "@/components/global/Section";
 
 export default function Services() {
   return (
-    <section
-      id="pricing"
-      className="
-      max-w-280 mx-auto
-      py-15
-      px-10
-      font-semibold 
-      items-center justify-between
-      text-neutral-900"
-    >
+    <Section id="pricing">
       <h2 className="mb-6 text-2xl text-center">Pricing</h2>
       <div className="grid sm:grid-cols-3 grid-cols-1 gap-4">
         <Card outline={true} color="blue">
@@ -58,6 +50,6 @@ Cloud Service IntegrationCybersecurity Compliance
           </ul>
         </Card>
       </div>
-    </section>
+    </Section>
   );
 }

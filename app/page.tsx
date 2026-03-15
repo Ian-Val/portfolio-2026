@@ -13,9 +13,13 @@ export default function Home() {
   return (
     <>
       <Header />
-      <main>
+      <main className="flex flex-col gap-15">
         <Hero />
+        {/* <About />
+        <Services />
+        <Pricing /> */}
         <Work />
+        {/* <CallToAction /> */}
       </main>
       <Footer />
     </>

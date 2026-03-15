@@ -1,9 +1,8 @@
+import Section from "@/components/global/Section";
+
 export default function About() {
   return (
-    <section
-      id="about"
-      className="pb-15  px-10 font-semibold items-center text-neutral-900 max-w-280 mx-auto justify-between"
-    >
+    <Section id="about" bgColor="blue-600" textColor="white">
       <h2 className="mb-6 text-2xl">About Me</h2>
       <div className="flex flex-col gap-6 ">
         <p>
@@ -19,6 +18,6 @@ export default function About() {
         </p>
         <p>When I'm not coding, you can find me playing tennis with friends.</p>
       </div>
-    </section>
+    </Section>
   );
 }
