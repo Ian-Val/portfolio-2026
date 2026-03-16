@@ -20,7 +20,7 @@ export default function Hero() {
           <div className="flex gap-4">
             <Link
               href="https://www.linkedin.com/in/ianvaleta/"
-              className="button-primary"
+              className="button-primary md:mx-0 md:mb-0 mx-auto mb-6"
             >
               Let's Connect on LinkedIn
             </Link>
