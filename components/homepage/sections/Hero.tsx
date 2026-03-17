@@ -31,7 +31,7 @@ export default function Hero() {
             src="/images/home/hero-photo.png"
             alt="A smiling person, Ian Valeta, stands in front of a DevFest New York City backdrop, holding a name badge and wearing a lanyard, with a podium microphone visible to the right."
             width={610}
-            height={773}
+            height={726}
             className="
           border-3 border-blue-600 
           shadow-2xl rounded-3xl

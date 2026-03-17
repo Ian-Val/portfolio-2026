@@ -12,7 +12,7 @@ export default function Nav() {
     font-semibold shadow-md
     "
     >
-      <nav className=" flex justify-between items-center max-w-280 mx-auto px-10 gap-5">
+      <nav className=" flex justify-between items-center max-w-270 mx-auto px-10 gap-5">
         <Link href="/">ian-val.com</Link>
         <Link href="#work" className="link ml-auto">
           Work
