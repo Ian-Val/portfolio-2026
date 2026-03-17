@@ -14,7 +14,7 @@ html {
 }
 
 .chip {
-  @apply bg-blue-100 text-blue-600 rounded-full py-1 px-6 flex-wrap;
+  @apply bg-blue-100 text-blue-600 rounded-full py-1 px-6 flex-wrap md:w-auto w-full;
 }
 
 .link {

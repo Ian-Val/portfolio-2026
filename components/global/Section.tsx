@@ -17,7 +17,7 @@ export default function Section({
   return (
     <section id={id} className={`w-full bg-${bgColor}`}>
       <div
-        className={`text-${textColor} md:max-w-280 md:p-10 md:py-15 py-15 w-full p-5 mx-auto`}
+        className={`text-${textColor} md:max-w-270 md:p-10 md:py-15 py-15 w-full p-5 mx-auto`}
       >
         {children}
       </div>

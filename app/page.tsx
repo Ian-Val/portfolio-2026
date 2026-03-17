@@ -8,6 +8,7 @@ import Services from "@/components/homepage/sections/Services";
 import Work from "@/components/homepage/sections/Work";
 import Pricing from "@/components/homepage/sections/Pricing";
 import CallToAction from "@/components/homepage/sections/CallToAction";
+import Certificates from "@/components/homepage/sections/Certificates";
 
 export default function Home() {
   return (
@@ -18,7 +19,9 @@ export default function Home() {
         {/* <About />
         <Services />
         <Pricing /> */}
+
         <Work />
+        <Certificates />
         {/* <CallToAction /> */}
       </main>
       <Footer />

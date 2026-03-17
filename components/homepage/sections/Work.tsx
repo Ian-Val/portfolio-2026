@@ -11,7 +11,7 @@ export default function Work() {
       </h2>
       <p className="my-4 text-center">↓</p>
       <div className="flex">
-        <div className="flex flex-col items-center w-full min-h-screen gap-4 px-10 py-10 border-2 rounded-2xl border-blue-600 bg-white text-neutral-900 ">
+        <div className="flex flex-col items-center w-full md:min-h-screen gap-4 px-10 py-10 border-2 rounded-2xl border-blue-600 bg-white text-neutral-900 ">
           <Link href="https://www.abecopark.com" className=" text-neutral-900">
             <h2 className="text-3xl">AB EcoPark</h2>
           </Link>
@@ -72,7 +72,7 @@ export default function Work() {
             src="https://www.abecopark.com"
             width="100%"
             title="Abecopark"
-            className="mt-4 outline-2 outline-neutral-300 rounded-xl md:aspect-5/4 aspect-3/5"
+            className="mt-4 outline-2 outline-neutral-300 rounded-xl md:aspect-5/4 aspect-3/5 md:block hidden"
           />
         </div>
       </div>
