@@ -226,7 +226,7 @@ export default function Certificates() {
           <li className="outline-blue-600 outline-2 p-10 rounded-lg ">
             <div>
               <Link
-                href="https://nextjs.org/learn/certificate?course=seo&user=66286&certId=seo-66286-1749488649867"
+                href="https://easternct.meritpages.com/stories/Ian-Valeta-graduates-from-Eastern-Connecticut-State-University/161916472"
                 target="_blank"
                 className="text-lg font-bold underline text-blue-600"
               >
