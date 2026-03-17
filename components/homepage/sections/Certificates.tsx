@@ -7,11 +7,11 @@ export default function Certificates() {
     <Section id="work" textColor="black">
       <h2 className="mb-6 text-2xl text-center">
         My{" "}
-        <span className="bg-amber-300 text-black px-2 py-1 rounded">
+        <span className="bg-blue-600 text-white px-2 py-1 rounded">
           Background
         </span>
       </h2>
-      <p className="my-4 text-center">↓</p>
+      <p className="my-4 text-center text-blue-600">↓</p>
       <div>
         <ul className="flex flex-col gap-10">
           <li className="outline-blue-600 outline-2 p-10 rounded-lg ">
