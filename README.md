@@ -9,7 +9,7 @@ I am a college graduate looking to land my first full-time role in software deve
 ## Tech Stack
 
 - **Frontend:** Next.js, React, TypeScript, Tailwind CSS
-- **Deployment:** Vercel
+- **Deployment:** Vercel, GoDaddy
 
 ## Key Projects
 
