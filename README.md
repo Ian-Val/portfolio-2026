@@ -19,7 +19,7 @@ I am a college graduate looking to land my first full-time role in software deve
 ## Contact
 
 - **Email:** [valeta.iac@gmail.com](mailto:valeta.iac@gmail.com)
-- **LinkedIn:** [linkedin.com/in/ian-valeta](https://linkedin.com/in/ian-valeta)
+- **LinkedIn:** [linkedin.com/in/ianvaleta/](https://www.linkedin.com/in/ianvaleta/)
 - **GitHub:** [github.com/ian-val](https://github.com/ian-val)
 
 ## Getting Started
@@ -31,4 +31,3 @@ npm run dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
