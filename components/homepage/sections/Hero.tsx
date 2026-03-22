@@ -1,6 +1,9 @@
 import Section from "@/components/global/Section";
 import Image from "next/image";
 import Link from "next/link";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faLinkedin, faGithub } from "@fortawesome/free-brands-svg-icons";
+import SocialIcons from "@/components/global/SocialIcons";
 
 export default function Hero() {
   return (
@@ -17,14 +20,7 @@ export default function Hero() {
             I am a college graduate looking to land my first full-time role in
             software development.
           </p>
-          <div className="flex gap-4">
-            <Link
-              href="https://www.linkedin.com/in/ianvaleta/"
-              className="button-primary md:mx-0 md:mb-0 mx-auto mb-6"
-            >
-              Let's Connect on LinkedIn
-            </Link>
-          </div>
+          <SocialIcons />
         </div>
         <div className="w-full">
           <Image
