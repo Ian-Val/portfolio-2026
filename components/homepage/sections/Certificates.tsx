@@ -4,6 +4,13 @@ import Section from "@/components/global/Section";
 export default function Certificates() {
   const certs = [
     {
+      title: "Test Driven Development: Unit 1",
+      url: "https://www.coursera.org/account/accomplishments/verify/88LL23M621HE",
+      provider: "Pearson | Coursera",
+      issued: "March 2026",
+      skills: ["Jest (Javascript Testing Framework)", "Typescript", "Babel"],
+    },
+    {
       title: "Object Oriented Design",
       url: "https://www.coursera.org/account/accomplishments/verify/RD6FYZDJ4RX8",
       provider: "University of Alberta | Coursera",
