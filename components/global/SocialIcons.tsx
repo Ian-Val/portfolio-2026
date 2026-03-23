@@ -13,7 +13,7 @@ export default function SocialIcons() {
       </a>
       <a
         className="button-primary p-1! text-4xl"
-        href="https://github.com/ianvaleta"
+        href="https://github.com/Ian-Val"
       >
         <FontAwesomeIcon icon={faGithub} />
       </a>

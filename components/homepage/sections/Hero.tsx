@@ -20,6 +20,7 @@ export default function Hero() {
             I am a college graduate looking to land my first full-time role in
             software development.
           </p>
+
           <SocialIcons />
         </div>
         <div className="w-full">
