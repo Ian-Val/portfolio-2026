@@ -32,6 +32,8 @@ export default function Work() {
           resources.
         </p>
 
+        <p>Domain: affordablebethlaham.org for $23.99 / yr</p>
+
         <p>Sections:</p>
 
         <ul className="list-disc list-inside flex flex-col gap-5">
