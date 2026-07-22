@@ -29,10 +29,15 @@ export default function Work() {
           is a mockup demonstrating how I would build a modern, SEO-focused
           website that helps the Bethlehem Affordable Housing Trust share its
           mission, grow community support, and connect residents with housing
-          resources.
+          resources.{" "}
+          <strong>
+            Domain:{" "}
+            <Link href="https://www.godaddy.com/domainsearch/find?isc=GDWELCOME&domainToCheck=affordablebethlaham.org&checkAvail=1">
+              affordablebethlaham.org
+            </Link>{" "}
+            for $23.99/yr
+          </strong>
         </p>
-
-        <p>Domain: affordablebethlaham.org for $23.99 / yr</p>
 
         <p>Sections:</p>
 
