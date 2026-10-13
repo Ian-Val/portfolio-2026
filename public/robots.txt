@@ -1,0 +1,5 @@
+User-Agent: *
+Allow: /
+
+Host: https://www.ian-val.com
+Sitemap: https://www.ian-val.com/sitemap.xml
