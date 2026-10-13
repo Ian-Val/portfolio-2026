@@ -1,7 +1,7 @@
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import Hero from "@/components/sections/Hero";
-import Ventures from "@/components/sections/Ventures";
+import Studystate from "@/components/sections/Studystate";
 import Projects from "@/components/sections/Projects";
 import Experience from "@/components/sections/Experience";
 import About from "@/components/sections/About";
@@ -50,7 +50,7 @@ export default function Home() {
       <Header />
       <main>
         <Hero />
-        <Ventures />
+        <Studystate />
         <Projects />
         <About />
         <Experience />

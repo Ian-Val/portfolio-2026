@@ -10,8 +10,8 @@ export default function Contact() {
       <div className="flex flex-col items-center gap-6 text-center">
         <p className="max-w-110">
           I&apos;m open to conversations with potential cofounders and
-          investors. If Jobspank or studystate.us interests you, send me an
-          email or connect with me on LinkedIn.
+          investors. If you want to help take studystate.us further, send me
+          an email or connect with me on LinkedIn.
         </p>
         <div className="flex flex-wrap justify-center gap-4">
           <a href={`mailto:${site.email}`} className="button-inverted">

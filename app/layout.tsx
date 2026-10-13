@@ -21,8 +21,12 @@ export const metadata: Metadata = {
   creator: site.name,
   keywords: [
     "Ian Valeta",
-    "Jobspank",
     "studystate.us",
+    "studystate",
+    "college cost comparison",
+    "Connecticut public colleges",
+    "SUNY and CUNY costs",
+    "Jobspank",
     "startup founder",
     "full stack web developer",
     "React developer",
