@@ -237,6 +237,7 @@ export const education = [
     school: "Platt Technical High School",
     degree: "Computer Aided Drafting and Design",
     dates: "2016 – 2020",
+    url: "https://platt.cttech.org/",
   },
 ];
 
