@@ -14,7 +14,7 @@ Full stack web developer and Magna Cum Laude Computer Science graduate from East
 ## Key Projects
 
 - **AB EcoPark:** Petition website built with Next.js and Supabase to collect signatures for a carbon-negative recycling facility.
-- **Jobspank:** Startup building a web app and browser add-on for entry-level job seekers.
+- **Jobspank:** Free job application tracker and one-click browser extension for entry-level job seekers.
 
 ## Editing Content
 

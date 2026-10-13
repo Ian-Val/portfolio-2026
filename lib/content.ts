@@ -83,15 +83,20 @@ export const projects: Project[] = [
     title: "Jobspank",
     url: "https://www.jobspank.org",
     role: "Founder · Jobspank LLC",
-    dates: "Mar 2025 – Mar 2026",
+    dates: "Mar 2025 – Present",
     summary:
-      "Jobspank LLC's first product: a web app and browser add-on for entry-level job seekers.",
+      "A free job application tracker and one-click browser extension for entry-level job seekers. No account needed; data stays in the browser.",
     points: [
-      "Interviewed recent college graduates to gather functional requirements.",
-      "Prototyped user flows and interactions in Figma.",
-      "Built the web app and browser add-on with HTML, CSS, and JavaScript.",
+      "Interviewed recent college graduates to gather requirements and prototyped user flows in Figma.",
+      "Built a spreadsheet-style tracker with inline editing, search, status filters, sortable columns, stats, undoable deletes, and CSV export.",
+      "Shipped a Manifest V3 browser extension that saves a job posting to the tracker in one click.",
+      "Added a resume bullet point wizard and blog on a shared design system, plus an SEO landing page with structured data and a sitemap.",
     ],
-    stack: ["JavaScript", "HTML", "CSS", "Browser Extensions", "Figma"],
+    stack: ["JavaScript", "HTML", "CSS", "Vite", "Browser Extensions", "Figma"],
+    image: {
+      src: "/images/projects/jobspank.png",
+      alt: "Jobspank homepage: Apply to 100 jobs. Lose track of zero. Beside a preview of the job application tracker",
+    },
   },
 ];
 
@@ -103,7 +108,7 @@ export const techRoles: Role[] = [
     location: "West Haven, CT",
     points: [
       "Building studystate.us, a cost and program comparison site covering 90 public colleges in Connecticut and New York.",
-      "Built a full-stack web app and browser add-on for entry-level job seekers, informed by user research interviews and Figma prototypes.",
+      "Built Jobspank, a free job application tracker and one-click browser extension for entry-level job seekers, informed by user research interviews and Figma prototypes.",
     ],
   },
   {
