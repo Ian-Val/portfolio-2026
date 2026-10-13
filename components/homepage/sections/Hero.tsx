@@ -1,8 +1,5 @@
 import Section from "@/components/global/Section";
 import Image from "next/image";
-import Link from "next/link";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faLinkedin, faGithub } from "@fortawesome/free-brands-svg-icons";
 import SocialIcons from "@/components/global/SocialIcons";
 
 export default function Hero() {
@@ -17,8 +14,10 @@ export default function Hero() {
             Ian Valeta
           </h1>
           <p className="my-6 max-w-90 md:text-start text-center md:ml-0 mx-auto font-normal">
-            I am a college graduate looking to land my first full-time role in
-            software development.
+            I&apos;m a Computer Science graduate from Eastern Connecticut State
+            University who builds fast, search-friendly websites and web apps
+            with React, Next.js, and TypeScript. I&apos;m looking to land my
+            first full-time role in software development.
           </p>
 
           <SocialIcons />
@@ -26,14 +25,13 @@ export default function Hero() {
         <div className="w-full">
           <Image
             src="/images/home/hero-photo.png"
-            alt="A smiling person, Ian Valeta, stands in front of a DevFest New York City backdrop, holding a name badge and wearing a lanyard, with a podium microphone visible to the right."
+            alt="Ian Valeta smiling in front of a DevFest New York City backdrop, holding a name badge and wearing a lanyard."
             width={610}
             height={726}
-            className="
-          border-3 border-blue-600 
-          shadow-2xl rounded-3xl
-          w-full"
-          ></Image>
+            priority
+            sizes="(min-width: 768px) 50vw, 100vw"
+            className="border-3 border-blue-600 shadow-2xl rounded-3xl w-full"
+          />
         </div>
       </div>
     </Section>

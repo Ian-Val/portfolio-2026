@@ -171,7 +171,7 @@ export default function Certificates() {
       ],
     },
     {
-      title: "Lean How to Code Course",
+      title: "Learn How to Code Course",
       url: "https://www.codecademy.com/profiles/ianval/certificates/11a686a7fd57b8c214f7f92749388d42",
       provider: "Codecademy",
       issued: "February 2024",
@@ -180,14 +180,14 @@ export default function Certificates() {
   ];
 
   return (
-    <Section id="work" textColor="black">
+    <Section id="background" className="text-black">
       <h2 className="mb-6 text-2xl text-center">
         My{" "}
         <span className="bg-blue-600 text-white px-2 py-1 rounded">
           Background
         </span>
       </h2>
-      <p className="my-4 text-center text-blue-600">↓</p>
+      <p className="my-4 text-center text-blue-600" aria-hidden="true">↓</p>
       <div>
         <ul className="flex flex-col gap-10">
           {certs.map((c) => (
