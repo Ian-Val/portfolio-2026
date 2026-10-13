@@ -189,6 +189,7 @@ export const skills = [
   "Supabase",
   "PostgreSQL",
   "Java",
+  "C++ (learning)",
   "Jest / TDD",
   "Technical SEO",
   "Git & GitHub",
