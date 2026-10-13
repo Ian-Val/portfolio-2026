@@ -5,12 +5,13 @@ import { site } from "@/lib/site";
 export default function Contact() {
   return (
     <Section id="contact" labelledBy="contact-heading" className="bg-blue-600 text-white">
-      <SectionHeading id="contact-heading" lead="Get in" highlight="Touch" inverted />
+      <SectionHeading id="contact-heading" lead="Let's" highlight="Talk" inverted />
 
       <div className="flex flex-col items-center gap-6 text-center">
         <p className="max-w-110">
-          Interested in cofounding or investing in what I&apos;m building? Send
-          me an email or connect with me on LinkedIn.
+          I&apos;m open to conversations with potential cofounders and
+          investors. If Jobspank or studystate.us interests you, send me an
+          email or connect with me on LinkedIn.
         </p>
         <div className="flex flex-wrap justify-center gap-4">
           <a href={`mailto:${site.email}`} className="button-inverted">

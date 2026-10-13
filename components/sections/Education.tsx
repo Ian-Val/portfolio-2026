@@ -5,12 +5,12 @@ import { certifications, education } from "@/lib/content";
 
 export default function Education() {
   return (
-    <Section id="education" labelledBy="education-heading">
+    <Section id="education" labelledBy="education-heading" className="bg-neutral-50">
       <SectionHeading id="education-heading" lead="My" highlight="Education" />
 
       <ul className="grid md:grid-cols-2 gap-4 mb-15">
         {education.map((item) => (
-          <li key={item.school} className="outline-2 outline-blue-600 rounded-lg p-6">
+          <li key={item.school} className="bg-white outline-2 outline-blue-600 rounded-lg p-6">
             <h3 className="text-lg font-bold">
               {item.url ? (
                 <a
@@ -36,7 +36,7 @@ export default function Education() {
         {certifications.map((cert) => (
           <li
             key={cert.title}
-            className="flex flex-col gap-2 outline-2 outline-blue-600 rounded-lg p-6"
+            className="flex flex-col gap-2 bg-white outline-2 outline-blue-600 rounded-lg p-6"
           >
             <h4>
               <a

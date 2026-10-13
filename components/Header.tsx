@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { navLinks, site } from "@/lib/site";
+import { navLinks } from "@/lib/site";
 
 export default function Header() {
   return (
@@ -20,8 +20,8 @@ export default function Header() {
             {label}
           </a>
         ))}
-        <a href={site.resume} className="button-primary">
-          Resume
+        <a href="#contact" className="button-primary">
+          Get in Touch
         </a>
       </nav>
     </header>

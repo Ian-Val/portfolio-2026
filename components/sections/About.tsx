@@ -19,9 +19,9 @@ export default function About() {
           >
             studystate.us
           </a>
-          , a site that compares every program and the real yearly cost at
-          Connecticut&apos;s public colleges and New York&apos;s SUNY and CUNY
-          campuses, tailored to where you live.
+          {" "}under Jobspank LLC. By day, I&apos;m an Admissions Counselor at
+          Eastern Connecticut State University, helping students and families
+          through the college search.
         </p>
       </div>
 
@@ -34,9 +34,9 @@ export default function About() {
             ))}
           </ul>
           <p className="text-neutral-600">
-            Outside of code, I&apos;ve worked in sales, finance, and university
-            admissions. That taught me how to explain technical ideas clearly
-            and work directly with clients.
+            Roles in door-to-door sales, financial services, and university
+            admissions taught me to pitch and to listen to the people I&apos;m
+            building for.
           </p>
         </div>
 

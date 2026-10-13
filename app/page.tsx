@@ -1,6 +1,7 @@
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import Hero from "@/components/sections/Hero";
+import Ventures from "@/components/sections/Ventures";
 import Projects from "@/components/sections/Projects";
 import Experience from "@/components/sections/Experience";
 import About from "@/components/sections/About";
@@ -17,6 +18,11 @@ const personJsonLd = {
   email: `mailto:${site.email}`,
   image: `${site.url}${site.image}`,
   jobTitle: site.jobTitle,
+  worksFor: {
+    "@type": "Organization",
+    name: site.company.name,
+    url: site.company.url,
+  },
   description: site.description,
   sameAs: Object.values(site.socials),
   address: {
@@ -44,9 +50,10 @@ export default function Home() {
       <Header />
       <main>
         <Hero />
+        <Ventures />
         <Projects />
-        <Experience />
         <About />
+        <Experience />
         <Education />
         <Contact />
       </main>

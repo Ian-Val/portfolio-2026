@@ -1,3 +1,13 @@
+export type Venture = {
+  title: string;
+  url: string;
+  role: string;
+  dates: string;
+  summary: string;
+  points: string[];
+  stats?: { value: string; label: string }[];
+};
+
 export type Project = {
   title: string;
   url: string;
@@ -6,7 +16,6 @@ export type Project = {
   summary: string;
   points: string[];
   stack: string[];
-  preview?: boolean;
 };
 
 export type Role = {
@@ -25,6 +34,41 @@ export type Certification = {
   skills: string[];
 };
 
+export const ventures: Venture[] = [
+  {
+    title: "studystate.us",
+    url: "https://www.studystate.us",
+    role: "Founder · Jobspank LLC",
+    dates: "2026 – Present",
+    summary:
+      "Every public college program in Connecticut and New York, with what a year actually costs, priced from each school's own rate sheet.",
+    points: [
+      "Search programs by subject or degree and compare real yearly costs, from living at home to a dorm and meal plan.",
+      "Match schools by home state, degree level, and subject.",
+      "Directory of tuition deals like free community college in Connecticut, SUNY Tuition Match, the Excelsior Scholarship, and the NEBHE Tuition Break.",
+      "Prices come from official fee schedules and are checked with admissions staff; anything unconfirmed is labeled \"not verified.\"",
+    ],
+    stats: [
+      { value: "90", label: "public colleges" },
+      { value: "8,000+", label: "programs" },
+      { value: "9", label: "home states priced" },
+    ],
+  },
+  {
+    title: "Jobspank",
+    url: "https://www.jobspank.org",
+    role: "Founder",
+    dates: "Mar 2025 – Present",
+    summary:
+      "The software and career services company behind studystate.us, started to serve entry-level job seekers and students with purpose-built software.",
+    points: [
+      "Built the first product, a full-stack web app and browser add-on for entry-level job seekers.",
+      "Interviewed recent college graduates to shape requirements, and prototyped flows in Figma.",
+      "Set up the brand, domain, hosting, and LinkedIn company presence.",
+    ],
+  },
+];
+
 export const projects: Project[] = [
   {
     title: "AB EcoPark",
@@ -39,22 +83,6 @@ export const projects: Project[] = [
       "Scheduled Instagram content with Buffer to drive traffic to the petition.",
     ],
     stack: ["Next.js", "React", "Tailwind CSS", "Supabase", "PostgreSQL", "Vercel", "Blender"],
-    preview: true,
-  },
-  {
-    title: "Jobspank",
-    url: "https://www.jobspank.org",
-    role: "Technical Founder",
-    dates: "Mar 2025 – Mar 2026",
-    summary:
-      "A software and career services startup built around the needs of entry-level job seekers.",
-    points: [
-      "Developed a full-stack web application and browser add-on with HTML, CSS, and JavaScript.",
-      "Interviewed recent college graduates to gather functional requirements.",
-      "Prototyped user flows and interactions in Figma.",
-      "Set up the custom domain and hosting with GoDaddy, Google Sites, and Vercel.",
-    ],
-    stack: ["JavaScript", "HTML", "CSS", "Browser Extensions", "Figma", "User Research"],
   },
   {
     title: "Snippet Library",
@@ -74,22 +102,22 @@ export const projects: Project[] = [
 
 export const techRoles: Role[] = [
   {
+    title: "Founder",
+    org: "Jobspank LLC",
+    dates: "Mar 2025 – Present",
+    location: "West Haven, CT",
+    points: [
+      "Building studystate.us, a cost and program comparison site covering 90 public colleges in Connecticut and New York.",
+      "Built a full-stack web app and browser add-on for entry-level job seekers, informed by user research interviews and Figma prototypes.",
+    ],
+  },
+  {
     title: "Volunteer Web Developer",
     org: "AB EcoPark LLC",
     dates: "Nov 2025 – Sep 2026",
     location: "North Haven, CT",
     points: [
       "Maintained a petition website supporting a carbon-negative waste recycling and incineration-free power plant.",
-    ],
-  },
-  {
-    title: "Technical Founder | Full-Stack Software Engineer",
-    org: "Jobspank",
-    dates: "Mar 2025 – Mar 2026",
-    location: "West Haven, CT",
-    points: [
-      "Developed a full-stack web application and browser add-on.",
-      "Ran user research interviews and designed UI prototypes in Figma.",
     ],
   },
   {
@@ -170,9 +198,9 @@ export const otherRoles: Role[] = [
 ];
 
 export const highlights = [
-  "Graduated Magna Cum Laude with a B.S. in Computer Science",
+  "Founded two software startups during college, and still building one of them",
   "Competed in hackathons at Harvard University, Wesleyan University, and Well4Tech",
-  "Started two software startups during college",
+  "Graduated Magna Cum Laude with a B.S. in Computer Science",
   "Built multiple video games with the Game Development Club",
   "Mentored 120+ incoming students as they prepared for college",
   "Volunteered with Habitat for Humanity in New Bern, North Carolina",
