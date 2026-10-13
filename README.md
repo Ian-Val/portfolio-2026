@@ -4,7 +4,7 @@
 
 ## About Me
 
-I am a college graduate looking to land my first full-time role in software development. My expertise spans full-stack development, with a focus on modern web technologies and cloud infrastructure.
+Full stack web developer and Magna Cum Laude Computer Science graduate from Eastern Connecticut State University, building fast, SEO-friendly websites and web apps with React, Next.js, and TypeScript.
 
 ## Tech Stack
 
@@ -13,9 +13,13 @@ I am a college graduate looking to land my first full-time role in software deve
 
 ## Key Projects
 
-- **Portfolio Website:** Built with Next.js and TypeScript, showcasing work and certifications.
-- **AB EcoPark Website:** Petition website built with Next.js, TypeScript, and Supabase to collect petition signatures.
+- **AB EcoPark:** Petition website built with Next.js and Supabase to collect signatures for a carbon-negative recycling facility.
+- **Jobspank:** Startup building a web app and browser add-on for entry-level job seekers.
 - **Snippet Library:** React app that gives marketers a library of reusable, live-previewed HTML/CSS components.
+
+## Editing Content
+
+All site copy (projects, experience, skills, education, certifications) lives in `lib/content.ts`. Site-wide details (URL, email, socials) live in `lib/site.ts`.
 
 ## Contact
 
