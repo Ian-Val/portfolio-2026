@@ -16,6 +16,7 @@ export type Project = {
   summary: string;
   points: string[];
   stack: string[];
+  image?: { src: string; alt: string };
 };
 
 export type Role = {
@@ -83,6 +84,10 @@ export const projects: Project[] = [
       "Scheduled Instagram content with Buffer to drive traffic to the petition.",
     ],
     stack: ["Next.js", "React", "Tailwind CSS", "Supabase", "PostgreSQL", "Vercel", "Blender"],
+    image: {
+      src: "/images/projects/ab-ecopark.png",
+      alt: "AB EcoPark homepage with a rendering of the facility on the North Haven waterfront at sunset",
+    },
   },
   {
     title: "Snippet Library",

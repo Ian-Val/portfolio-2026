@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Section from "@/components/ui/Section";
 import SectionHeading from "@/components/ui/SectionHeading";
 import Chips from "@/components/ui/Chips";
@@ -15,6 +16,18 @@ export default function Projects() {
             key={project.title}
             className="flex flex-col gap-4 md:p-8 p-6 rounded-2xl outline-2 outline-blue-600"
           >
+            {project.image && (
+              <a href={project.url} target="_blank" rel="noopener noreferrer">
+                <Image
+                  src={project.image.src}
+                  alt={project.image.alt}
+                  width={1440}
+                  height={900}
+                  sizes="(min-width: 768px) 480px, 100vw"
+                  className="w-full rounded-xl outline-2 outline-neutral-200"
+                />
+              </a>
+            )}
             <header>
               <p className="text-sm font-semibold text-blue-600">
                 {project.role} · {project.dates}
