@@ -21,7 +21,8 @@ export default function Hero() {
             startup Jobspank, and built the AB EcoPark petition site.
           </p>
           <p className="mb-8 max-w-110 md:text-start text-center md:ml-0 mx-auto text-neutral-600">
-            Based in Connecticut and open to software development roles.
+            Based in Connecticut. Open to conversations with potential
+            cofounders and investors.
           </p>
 
           <div className="flex flex-wrap gap-4 mb-8 md:justify-start justify-center">

@@ -9,8 +9,8 @@ export default function Contact() {
 
       <div className="flex flex-col items-center gap-6 text-center">
         <p className="max-w-110">
-          Hiring for a developer role or have a project in mind? Send me an
-          email or connect with me on LinkedIn.
+          Interested in cofounding or investing in what I&apos;m building? Send
+          me an email or connect with me on LinkedIn.
         </p>
         <div className="flex flex-wrap justify-center gap-4">
           <a href={`mailto:${site.email}`} className="button-inverted">
