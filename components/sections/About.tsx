@@ -50,6 +50,18 @@ export default function About() {
             ))}
           </ul>
           <p className="text-neutral-600">Languages: English, Spanish (elementary)</p>
+          <p className="text-neutral-600">
+            Fun fact: I&apos;m hopelessly addicted to{" "}
+            <a
+              href="https://orteil.dashnet.org/cookieclicker/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="underline text-blue-600"
+            >
+              Cookie Clicker
+            </a>
+            .
+          </p>
         </div>
       </div>
     </Section>
