@@ -6,6 +6,7 @@ export type Venture = {
   summary: string;
   points: string[];
   stats?: { value: string; label: string }[];
+  image: { src: string; alt: string };
 };
 
 export type Project = {
@@ -16,6 +17,7 @@ export type Project = {
   summary: string;
   points: string[];
   stack: string[];
+  image?: { src: string; alt: string };
 };
 
 export type Role = {
@@ -34,45 +36,34 @@ export type Certification = {
   skills: string[];
 };
 
-export const ventures: Venture[] = [
-  {
-    title: "studystate.us",
-    url: "https://www.studystate.us",
-    role: "Founder · Jobspank LLC",
-    dates: "2026 – Present",
-    summary:
-      "Every public college program in Connecticut and New York, with what a year actually costs, priced from each school's own rate sheet.",
-    points: [
-      "Search programs by subject or degree and compare real yearly costs, from living at home to a dorm and meal plan.",
-      "Match schools by home state, degree level, and subject.",
-      "Directory of tuition deals like free community college in Connecticut, SUNY Tuition Match, the Excelsior Scholarship, and the NEBHE Tuition Break.",
-      "Prices come from official fee schedules and are checked with admissions staff; anything unconfirmed is labeled \"not verified.\"",
-    ],
-    stats: [
-      { value: "90", label: "public colleges" },
-      { value: "8,000+", label: "programs" },
-      { value: "9", label: "home states priced" },
-    ],
+export const studystate: Venture = {
+  title: "studystate.us",
+  url: "https://www.studystate.us",
+  role: "Founder · Jobspank LLC",
+  dates: "2026 – Present",
+  summary:
+    "Every public college program in Connecticut and New York, with what a year actually costs, priced from each school's own rate sheet.",
+  points: [
+    "Search programs by subject or degree and compare real yearly costs, from living at home to a dorm and meal plan.",
+    "Match schools by home state, degree level, and subject.",
+    "Directory of tuition deals like free community college in Connecticut, SUNY Tuition Match, the Excelsior Scholarship, and the NEBHE Tuition Break.",
+    "Prices come from official fee schedules and are checked with admissions staff; anything unconfirmed is labeled \"not verified.\"",
+  ],
+  stats: [
+    { value: "90", label: "public colleges" },
+    { value: "8,000+", label: "programs" },
+    { value: "9", label: "home states priced" },
+  ],
+  image: {
+    src: "/images/projects/studystate.png",
+    alt: "studystate.us homepage: Every public college program in Connecticut and New York. Real answers.",
   },
-  {
-    title: "Jobspank",
-    url: "https://www.jobspank.org",
-    role: "Founder",
-    dates: "Mar 2025 – Present",
-    summary:
-      "The software and career services company behind studystate.us, started to serve entry-level job seekers and students with purpose-built software.",
-    points: [
-      "Built the first product, a full-stack web app and browser add-on for entry-level job seekers.",
-      "Interviewed recent college graduates to shape requirements, and prototyped flows in Figma.",
-      "Set up the brand, domain, hosting, and LinkedIn company presence.",
-    ],
-  },
-];
+};
 
 export const projects: Project[] = [
   {
     title: "AB EcoPark",
-    url: "https://www.abecopark.com",
+    url: "https://www.ab-ecopark.com",
     role: "Volunteer Web Developer",
     dates: "Nov 2025 – Sep 2026",
     summary:
@@ -83,20 +74,24 @@ export const projects: Project[] = [
       "Scheduled Instagram content with Buffer to drive traffic to the petition.",
     ],
     stack: ["Next.js", "React", "Tailwind CSS", "Supabase", "PostgreSQL", "Vercel", "Blender"],
+    image: {
+      src: "/images/projects/ab-ecopark.png",
+      alt: "AB EcoPark homepage with a rendering of the facility on the North Haven waterfront at sunset",
+    },
   },
   {
-    title: "Snippet Library",
-    url: "https://html-snippet-library.vercel.app/",
-    role: "Personal Project",
-    dates: "2026",
+    title: "Jobspank",
+    url: "https://www.jobspank.org",
+    role: "Founder · Jobspank LLC",
+    dates: "Mar 2025 – Mar 2026",
     summary:
-      "A client-side React app that gives marketers a library of tested HTML/CSS components, so campaign and landing pages take minutes instead of hours.",
+      "Jobspank LLC's first product: a web app and browser add-on for entry-level job seekers.",
     points: [
-      "Live preview and responsive desktop, tablet, and mobile views.",
-      "Isolated CSS scoping to prevent style conflicts between components.",
-      "One-click copy of full HTML+CSS blocks with unique IDs per instance.",
+      "Interviewed recent college graduates to gather functional requirements.",
+      "Prototyped user flows and interactions in Figma.",
+      "Built the web app and browser add-on with HTML, CSS, and JavaScript.",
     ],
-    stack: ["React", "JavaScript", "HTML", "CSS", "Vercel"],
+    stack: ["JavaScript", "HTML", "CSS", "Browser Extensions", "Figma"],
   },
 ];
 

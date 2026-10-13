@@ -15,7 +15,6 @@ Full stack web developer and Magna Cum Laude Computer Science graduate from East
 
 - **AB EcoPark:** Petition website built with Next.js and Supabase to collect signatures for a carbon-negative recycling facility.
 - **Jobspank:** Startup building a web app and browser add-on for entry-level job seekers.
-- **Snippet Library:** React app that gives marketers a library of reusable, live-previewed HTML/CSS components.
 
 ## Editing Content
 

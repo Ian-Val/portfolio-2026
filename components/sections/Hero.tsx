@@ -10,7 +10,7 @@ export default function Hero() {
         <div className="w-full">
           <h1 className="font-bold text-4xl mb-4 md:text-start text-center">
             <span className="flex text-blue-600 text-lg mb-2 md:justify-start justify-center">
-              Founder, Jobspank LLC
+              Founder, studystate.us
             </span>{" "}
             Ian Valeta
           </h1>
@@ -24,10 +24,11 @@ export default function Hero() {
             >
               studystate.us
             </a>
-            , which shows students every public college program in Connecticut
-            and New York and what a year there actually costs. I&apos;m a
-            full stack developer and a Magna Cum Laude Computer Science
-            graduate of Eastern Connecticut State University.
+            : every public college program in Connecticut and New York,
+            and what a year there actually costs, priced from each
+            school&apos;s own rate sheet. I&apos;m a full stack developer and
+            a Magna Cum Laude Computer Science graduate of Eastern Connecticut
+            State University.
           </p>
           <p className="mb-8 max-w-110 md:text-start text-center md:ml-0 mx-auto text-neutral-600">
             Based in Connecticut. Open to conversations with potential
@@ -35,8 +36,13 @@ export default function Hero() {
           </p>
 
           <div className="flex flex-wrap gap-4 mb-8 md:justify-start justify-center">
-            <a href="#building" className="button-primary">
-              See What I&apos;m Building
+            <a
+              href="https://www.studystate.us"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="button-primary"
+            >
+              Try studystate.us ↗
             </a>
             <a href="#contact" className="button-secondary">
               Get in Touch
