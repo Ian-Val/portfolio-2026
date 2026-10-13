@@ -72,7 +72,7 @@ export const ventures: Venture[] = [
 export const projects: Project[] = [
   {
     title: "AB EcoPark",
-    url: "https://www.abecopark.com",
+    url: "https://www.ab-ecopark.com",
     role: "Volunteer Web Developer",
     dates: "Nov 2025 – Sep 2026",
     summary:
