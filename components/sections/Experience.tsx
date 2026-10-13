@@ -7,7 +7,7 @@ export default function Experience() {
     <Section id="experience" labelledBy="experience-heading">
       <SectionHeading id="experience-heading" lead="My" highlight="Experience" />
 
-      <h3 className="text-xl font-bold mb-6">Software & Technical</h3>
+      <h3 className="text-xl font-bold mb-6">Founder & Technical</h3>
       <ol className="border-l-2 border-blue-600 ml-2 flex flex-col gap-10 mb-15">
         {techRoles.map((role) => (
           <li key={role.title + role.org} className="relative pl-8">

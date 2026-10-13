@@ -21,8 +21,10 @@ export const metadata: Metadata = {
   creator: site.name,
   keywords: [
     "Ian Valeta",
+    "Jobspank",
+    "studystate.us",
+    "startup founder",
     "full stack web developer",
-    "software developer",
     "React developer",
     "Next.js developer",
     "TypeScript",

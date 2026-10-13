@@ -10,26 +10,36 @@ export default function Hero() {
         <div className="w-full">
           <h1 className="font-bold text-4xl mb-4 md:text-start text-center">
             <span className="flex text-blue-600 text-lg mb-2 md:justify-start justify-center">
-              Full Stack Web Developer
+              Founder, Jobspank LLC
             </span>{" "}
             Ian Valeta
           </h1>
           <p className="my-6 max-w-110 md:text-start text-center md:ml-0 mx-auto">
-            I build fast, search-friendly websites and web apps with React,
-            Next.js, and TypeScript. I graduated Magna Cum Laude in Computer
-            Science from Eastern Connecticut State University, founded the
-            startup Jobspank, and built the AB EcoPark petition site.
+            I&apos;m building{" "}
+            <a
+              href="https://www.studystate.us"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="underline text-blue-600"
+            >
+              studystate.us
+            </a>
+            , which shows students every public college program in Connecticut
+            and New York and what a year there actually costs. I&apos;m a
+            full stack developer and a Magna Cum Laude Computer Science
+            graduate of Eastern Connecticut State University.
           </p>
           <p className="mb-8 max-w-110 md:text-start text-center md:ml-0 mx-auto text-neutral-600">
-            Based in Connecticut and open to software development roles.
+            Based in Connecticut. Open to conversations with potential
+            cofounders and investors.
           </p>
 
           <div className="flex flex-wrap gap-4 mb-8 md:justify-start justify-center">
-            <a href="#projects" className="button-primary">
-              View Projects
+            <a href="#building" className="button-primary">
+              See What I&apos;m Building
             </a>
-            <a href={site.resume} className="button-secondary">
-              Resume
+            <a href="#contact" className="button-secondary">
+              Get in Touch
             </a>
           </div>
 
