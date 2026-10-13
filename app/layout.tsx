@@ -1,17 +1,59 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import { Lexend } from "next/font/google";
+import { site } from "@/lib/site";
 import "./globals.css";
 
 const lexend = Lexend({
   subsets: ["latin"],
-  weight: ["400", "500", "700"], // Add or remove weights as needed
-  variable: "--font-lexend", // Assign to a CSS variable
+  weight: ["400", "500", "700"],
+  variable: "--font-lexend",
 });
 
 export const metadata: Metadata = {
-  title: "Ian Valeta | Full Stack Web Developer",
-  description:
-    "Ian Valeta is recent college graduate looking to land his first full-time role in software development.",
+  metadataBase: new URL(site.url),
+  title: {
+    default: site.title,
+    template: `%s | ${site.name}`,
+  },
+  description: site.description,
+  applicationName: site.name,
+  authors: [{ name: site.name, url: site.url }],
+  creator: site.name,
+  keywords: [
+    "Ian Valeta",
+    "full stack web developer",
+    "software developer",
+    "React developer",
+    "Next.js developer",
+    "TypeScript",
+    "web developer portfolio",
+  ],
+  alternates: {
+    canonical: "/",
+  },
+  openGraph: {
+    type: "profile",
+    url: "/",
+    siteName: site.name,
+    title: site.title,
+    description: site.description,
+    locale: "en_US",
+    images: [{ url: site.image, width: 610, height: 726, alt: site.name }],
+  },
+  twitter: {
+    card: "summary",
+    title: site.title,
+    description: site.description,
+    images: [site.image],
+  },
+  robots: {
+    index: true,
+    follow: true,
+  },
+};
+
+export const viewport: Viewport = {
+  themeColor: "#155dfc",
 };
 
 export default function RootLayout({

@@ -14,7 +14,8 @@ I am a college graduate looking to land my first full-time role in software deve
 ## Key Projects
 
 - **Portfolio Website:** Built with Next.js and TypeScript, showcasing work and certifications.
-- **AB EcoPark Website:** Petition website build with Next.js, TypeScript, and Supabase to collect petition signatures.
+- **AB EcoPark Website:** Petition website built with Next.js, TypeScript, and Supabase to collect petition signatures.
+- **Snippet Library:** React app that gives marketers a library of reusable, live-previewed HTML/CSS components.
 
 ## Contact
 

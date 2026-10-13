@@ -16,13 +16,16 @@ export default function Certification({
   return (
     <li className="outline-blue-600 outline-2 p-10 rounded-lg">
       <div>
-        <a
-          href={url}
-          target="_blank"
-          className="text-lg font-bold underline text-blue-600"
-        >
-          {title}
-        </a>
+        <h3>
+          <a
+            href={url}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-lg font-bold underline text-blue-600"
+          >
+            {title}
+          </a>
+        </h3>
         <p>{provider}</p>
         <small>{issued}</small>
 
