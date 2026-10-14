@@ -1,0 +1,13 @@
+{
+  "name": "Ian Valeta | Founder of studystate.us",
+  "short_name": "Ian Valeta",
+  "description": "Ian Valeta is the founder of studystate.us, which shows every public college program in Connecticut and New York and what a year there actually costs. Full stack developer and Magna Cum Laude Computer Science graduate.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#155dfc",
+  "icons": [
+    { "src": "/icons/icon-192.png", "sizes": "192x192", "type": "image/png" },
+    { "src": "/icons/icon-512.png", "sizes": "512x512", "type": "image/png" }
+  ]
+}

@@ -8,17 +8,26 @@ Full stack web developer and Magna Cum Laude Computer Science graduate from East
 
 ## Tech Stack
 
-- **Frontend:** Next.js, React, TypeScript, Tailwind CSS
-- **Deployment:** Vercel, GoDaddy
+- **Frontend:** Plain HTML and CSS, no framework, no build step, no JavaScript
+- **Deployment:** Vercel (static files from `public/`), GoDaddy
 
 ## Key Projects
 
 - **AB EcoPark:** Petition website built with Next.js and Supabase to collect signatures for a carbon-negative recycling facility.
-- **Jobspank:** Startup building a web app and browser add-on for entry-level job seekers.
+- **Jobspank:** Free job application tracker and one-click browser extension for entry-level job seekers.
 
 ## Editing Content
 
-All site copy (projects, experience, skills, education, certifications) lives in `lib/content.ts`. Site-wide details (URL, email, socials) live in `lib/site.ts`.
+Everything is in `public/`:
+
+- `index.html`: all page content (projects, experience, skills, education, certifications)
+- `css/style.css`: all styles; colors are variables at the top
+- `images/`: WebP screenshots. Projects use a 1440px and an 800px version (`name.webp`, `name-800.webp`)
+- `404.html`, `robots.txt`, `sitemap.xml`, `manifest.webmanifest`
+
+Update the copyright year in the footer and `lastmod` in `sitemap.xml` when you make changes.
+
+Security headers (CSP, clickjacking protection, etc.) and caching live in `vercel.json`. The CSP blocks all scripts, so adding JavaScript means updating `script-src` there.
 
 ## Contact
 
@@ -28,10 +37,10 @@ All site copy (projects, experience, skills, education, certifications) lives in
 
 ## Getting Started
 
-To run this project locally:
+To preview locally, serve the `public` folder:
 
 ```bash
-npm run dev
+python3 -m http.server 3000 --directory public
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
