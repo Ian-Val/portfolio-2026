@@ -1,0 +1,64 @@
+# Merges a pull request on its own once it's safe: the "Checks" workflow passed on its
+# latest commit and the Vercel preview built. Then Vercel deploys main as usual.
+# To keep a PR from merging, mark it as a draft or add the label "hold".
+# This file runs from main, so a pull request can't change how it behaves.
+name: Auto-merge
+
+on:
+  workflow_run:
+    workflows: [Checks]
+    types: [completed]
+
+permissions:
+  contents: write
+  pull-requests: write
+
+concurrency:
+  group: automerge-${{ github.event.workflow_run.head_branch }}
+  cancel-in-progress: true
+
+jobs:
+  merge:
+    if: >-
+      github.event.workflow_run.event == 'pull_request' &&
+      github.event.workflow_run.conclusion == 'success' &&
+      github.event.workflow_run.head_repository.full_name == github.repository
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    env:
+      GH_TOKEN: ${{ github.token }}
+      REPO: ${{ github.repository }}
+      SHA: ${{ github.event.workflow_run.head_sha }}
+      BRANCH: ${{ github.event.workflow_run.head_branch }}
+    steps:
+      - name: Find the pull request
+        id: pr
+        run: |
+          pr=$(gh api "repos/$REPO/pulls?state=open&head=${REPO%%/*}:$BRANCH" --jq '.[0]')
+          if [ -z "$pr" ] || [ "$pr" = "null" ]; then echo "No open PR for $BRANCH"; exit 0; fi
+          num=$(jq -r .number <<<"$pr")
+          head=$(jq -r .head.sha <<<"$pr")
+          draft=$(jq -r .draft <<<"$pr")
+          hold=$(jq -r '[.labels[].name] | index("hold") != null' <<<"$pr")
+          if [ "$head" != "$SHA" ]; then echo "PR #$num has newer commits; their own checks will decide."; exit 0; fi
+          if [ "$draft" = "true" ] || [ "$hold" = "true" ]; then echo "PR #$num is a draft or on hold."; exit 0; fi
+          echo "number=$num" >> "$GITHUB_OUTPUT"
+
+      - name: Wait for the Vercel preview
+        if: steps.pr.outputs.number
+        run: |
+          for i in $(seq 1 60); do
+            state=$(gh api "repos/$REPO/commits/$SHA/status" --jq '[.statuses[] | select(.context | startswith("Vercel")) | .state] | if length == 0 then "none" elif any(. == "failure" or . == "error") then "failure" elif all(. == "success") then "success" else "pending" end')
+            echo "Vercel: $state"
+            case "$state" in
+              success) exit 0 ;;
+              failure) echo "::error::The Vercel preview failed, so this PR won't merge."; exit 1 ;;
+              none) [ "$i" -ge 6 ] && { echo "This repo has no Vercel preview; going ahead."; exit 0; } ;;
+            esac
+            sleep 15
+          done
+          echo "::error::The Vercel preview didn't finish in 15 minutes."; exit 1
+
+      - name: Merge
+        if: steps.pr.outputs.number
+        run: gh pr merge "${{ steps.pr.outputs.number }}" --repo "$REPO" --squash --delete-branch --match-head-commit "$SHA"

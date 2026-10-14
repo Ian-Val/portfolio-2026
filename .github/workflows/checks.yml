@@ -1,0 +1,23 @@
+# Runs on every pull request and every push to main. A red X means something below failed;
+# click "Details" on the PR to see which step and why.
+name: Checks
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+
+permissions:
+  contents: read
+
+jobs:
+  checks:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: Every local link and image exists
+        run: node scripts/check-site.mjs
